@@ -1,3 +1,8 @@
+<script setup>
+import { useAuthStore } from "../stores/useAuthStore";
+const store = useAuthStore();
+</script>
+
 <template>
     <v-app-bar :elevation="9" rounded>
         <v-img class="mx-3" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg"
@@ -6,8 +11,22 @@
 
         <template v-slot:append>
             <v-btn icon="mdi-theme-light-dark"></v-btn>
-            <v-btn icon="mdi-account" disabled></v-btn>
+
+            <v-menu open-on-hover>
+                <template v-slot:activator="{ props }">
+                    <v-btn :disabled="!store.user.email" icon="mdi-account" v-bind="props"></v-btn>
+                </template>
+
+                <v-list>
+                    <v-list-item>
+                        <p class="text-center py-3">{{ store.nickname }}</p>
+                        <v-divider></v-divider>
+                        <v-btn class="d-flex mx-auto my-4" @click="store.logout">Logout</v-btn>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
         </template>
+
     </v-app-bar>
 </template>
 

@@ -1,12 +1,10 @@
 <script setup>
-import AppBar from "../components/AppBar.vue"
 import LoginTitle from "../components/LoginTitle.vue"
 import LoginForm from "../components/LoginForm.vue"
 import LoginPreview from "../components/LoginPreview.vue";
 </script>
 
 <template>
-  <AppBar />
 
   <v-main class="d-flex">
 
