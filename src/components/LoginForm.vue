@@ -13,6 +13,7 @@ const toggleFormMode = () => {
     : (formModeText.value = "Already registered?");
 };
 
+
 </script>
 
 <template>

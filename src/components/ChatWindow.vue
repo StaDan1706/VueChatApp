@@ -25,7 +25,7 @@ onChildAdded(chatMessagesRef, async(data) => {
 </script>
 
 <template>
-    <v-container style="height: 400px;" class="overflow-y-auto d-flex flex-column">
+    <v-container style="max-height: 70vh;" class="overflow-y-auto d-flex flex-column">
         <ChatMessageCard v-for="message in messages" :message="message" />
         <div ref="bottom"></div>
     </v-container>
