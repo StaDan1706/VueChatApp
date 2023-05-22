@@ -21,7 +21,7 @@ const verifyUser = (message) => {
         :class="verifyUser(message) == 'You!' ? 'messageCardContainer currentlyLoggedUserMessage' : 'messageCardContainer'">
         <v-card style="max-width: 85%">
             <v-row class="d-flex align-center px-5 pt-2 ">
-                <ChatAvatar />
+                <ChatAvatar :messageFrom="message.from"/>
                 <v-card-title>{{ verifyUser(message) }}</v-card-title>
                 <v-card-subtitle class="text-caption">{{ message.time }}</v-card-subtitle>
             </v-row>

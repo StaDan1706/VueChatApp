@@ -10,9 +10,9 @@ const store = useAuthStore();
         <v-app-bar-tittle class="font-weight-bold title">Messenger</v-app-bar-tittle>
 
         <template v-slot:append>
-            <v-btn icon="mdi-theme-light-dark"></v-btn>
+            <!-- <v-btn icon="mdi-theme-light-dark"></v-btn> -->
 
-            <v-menu open-on-hover>
+            <v-menu>
                 <template v-slot:activator="{ props }">
                     <v-btn :disabled="!store.user.email" icon="mdi-account" v-bind="props"></v-btn>
                 </template>

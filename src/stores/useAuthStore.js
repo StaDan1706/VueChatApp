@@ -34,11 +34,11 @@ export const useAuthStore = defineStore({
                 this.message = ""
             }
         },
-        writeUserData(userId, nick, email) {
+        writeUserData(userId, username, email) {
             const db = getDatabase();
             set(ref(db, 'users/' + userId), {
-                username: nick,
-                email: email,
+                username: username,
+                email: email
             });
         },
         getUserNickname(userId) {
