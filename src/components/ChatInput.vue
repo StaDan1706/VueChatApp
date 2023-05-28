@@ -7,7 +7,7 @@ const store = useAuthStore();
 
 <template>
     <v-divider></v-divider>
-    <v-text-field variant="underlined" class="mx-4 mt-4" v-model="store.message">
+    <v-text-field @keydown.enter="store.writeOnChat(store.user.id, store.nickname, store.message)" variant="underlined" class="mx-4 mt-4" v-model="store.message">
         <template v-slot:append>
             <v-btn @click="store.writeOnChat(store.user.id, store.nickname, store.message)" icon="mdi-arrow-right"
                 color="blue">
