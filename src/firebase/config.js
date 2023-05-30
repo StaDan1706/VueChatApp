@@ -10,13 +10,13 @@ console.log("Project id" + import.meta.env.VITE_VUE_APP_FIREBASE_PROJECT_ID)
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_VUE_APP_FIREBASE_API_KEY,
-    authDomain: import.meta.env.VITE_VUE_APP_FIREBASE_PROJECT_ID + "firebaseapp.com",
-    databaseURL:  "https://chatapp-c02f9-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "chatapp-c02f9",
+    authDomain: import.meta.env.VITE_VUE_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_VUE_APP_FIREBASE_DATABASE_URL,
+    projectId: import.meta.env.VITE_VUE_APP_FIREBASE_PROJECT_ID,
     storageBucket: import.meta.env.VITE_VUE_APP_FIREBASE_PROJECT_ID + "appspot.com",
-    messagingSenderId: "586992265067",
-    appId: "1:586992265067:web:94c5c75ba6fa83825f4e2e",
-    measurementId: "G-6ZNHHHS444"
+    messagingSenderId: import.meta.env.VITE_VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_VUE_APP_FIREBASE_MESSAGING_APP_ID,
+    measurementId: import.meta.env.VITE_VUE_APP_FIREBASE_MESSAGING_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
