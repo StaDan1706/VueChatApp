@@ -3,7 +3,11 @@ import { getAuth } from 'firebase/auth'
 import { getDatabase } from "firebase/database";
 
 
-
+console.log("X")
+console.log("1" + VITE_VUE_APP_FIREBASE_API_KEY)
+console.log("2" + process.env.VITE_VUE_APP_FIREBASE_API_KEY)
+console.log("3" + env.VITE_VUE_APP_FIREBASE_API_KEY )
+console.log("4" + import.meta.env.VITE_VUE_APP_FIREBASE_API_KEY)
 const firebaseConfig = {
     apiKey: process.env.VITE_VUE_APP_FIREBASE_API_KEY,
     authDomain: process.env.VITE_VUE_APP_FIREBASE_PROJECT_ID + "firebaseapp.com",
