@@ -24,7 +24,12 @@ const router = createRouter({
       name: 'chat',
       component: () => import('../views/ChatView.vue'),
       beforeEnter: requireAuth
-    }
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "notfound",
+      component: () => import('../views/NotFoundView.vue'),
+    },
   ]
 })
 
