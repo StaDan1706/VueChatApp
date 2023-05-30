@@ -2,12 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth'
 import { getDatabase } from "firebase/database";
 
-
-
-console.log("Api key" + import.meta.env.VITE_VUE_APP_FIREBASE_API_KEY)
-console.log("Project id" + import.meta.env.VITE_VUE_APP_FIREBASE_PROJECT_ID)
-
-
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_VUE_APP_FIREBASE_API_KEY,
     authDomain: import.meta.env.VITE_VUE_APP_FIREBASE_AUTH_DOMAIN,
