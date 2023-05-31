@@ -1,10 +1,7 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white">
-</p>
-
 ## Overview. 
 
 An application that allows you to chat online, modeled on messenger
+![Messenger](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)
 
 ## Live
 
