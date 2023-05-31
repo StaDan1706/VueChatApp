@@ -1,22 +1,36 @@
-# vuechatapp
+## Overview
 
-This template should help get you started developing with Vue 3 in Vite.
+An application that allows you to chat online, modeled on messenger
 
-## Recommended IDE Setup
+## Live
+
+<https://chatappvue.netlify.app/>
+
+## Installation & running
+
+### Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### Install node dependencies
 
 ```sh
 npm install
 ```
+### Add .env
 
-### Compile and Hot-Reload for Development
+```
+# .env 
+
+VITE_VUE_APP_FIREBASE_AUTH_DOMAIN = 
+VITE_VUE_APP_FIREBASE_DATABASE_URL = 
+VITE_VUE_APP_FIREBASE_PROJECT_ID = 
+VITE_VUE_APP_FIREBASE_MESSAGING_SENDER_ID = 
+VITE_VUE_APP_FIREBASE_APP_ID = 
+VITE_VUE_APP_FIREBASE_MEASUREMENT_ID = 
+```
+
+### Start dev server
 
 ```sh
 npm run dev
@@ -28,8 +42,4 @@ npm run dev
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
-npm run test:unit
-```
